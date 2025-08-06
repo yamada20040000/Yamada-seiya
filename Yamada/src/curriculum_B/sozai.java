@@ -1,3 +1,4 @@
+package curriculum_B;
 import java.util.Scanner;
 
 public class sozai {
