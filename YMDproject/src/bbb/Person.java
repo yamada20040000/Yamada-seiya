@@ -1,25 +1,29 @@
 package bbb;
 
+/*変数宣言*/
 public class Person {
     String name;
     int age;
     double height;
     double weight;
-
+ /*カウント用*/
     static int count = 0;
 
+    /*コンストラクタ*/
     public Person(String name, int age, double height, double weight) {
         this.name = name;
         this.age = age;
         this.height = height;
         this.weight = weight;
-        count++;
+        count = 1;
     }
 
+    /*BMIの計算用*/
     public double bmi() {
         return this.weight / (this.height * this.height);
     }
 
+    /*コンソールに表示するためのもの*/
     public void print() {
         System.out.println(this.name);
         System.out.println(this.age);
