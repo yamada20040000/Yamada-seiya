@@ -27,11 +27,11 @@ public class Person {
     public void print() {
         System.out.println(this.name);
         System.out.println(this.age);
-        System.out.println(this.bmi());
+        System.out.println(String.format("%.1f", this.bmi()));
         System.out.println();
         System.out.println("名前は" + this.name + "です");
         System.out.println("年は" + this.age + "です");
-        System.out.println("BMIは" + this.bmi() + "です");
+        System.out.println("BMIは" + String.format("%.1f", this.bmi()) + "です");
         System.out.println();
         }
 

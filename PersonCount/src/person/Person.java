@@ -50,7 +50,7 @@ public class Person{
 	  System.out.println("年は" + this.age + "です");
 	  System.out.println("身長は" + this.height + "です");
 	  System.out.println("体重は" + this.weight + "です");
-	  System.out.println("BMIは" + bmi() +"です");
+	  System.out.println("BMIは" + String.format("%.1f", this.bmi()) + "です");
 	  System.out.println();
 	 }
 

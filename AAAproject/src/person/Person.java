@@ -73,7 +73,7 @@ public class Person {
 		System.out.println("歳は" + this.getage() + "です");
 		System.out.println("身長は" + this.getheight() + "です");
 		System.out.println("体重は" + this.getweight() + "です");
-		System.out.println("BMIは" + this.bmis());
+		System.out.println("BMIは" + String.format("%.1f", this.bmis()));
 		System.out.println();
 	}
 }
