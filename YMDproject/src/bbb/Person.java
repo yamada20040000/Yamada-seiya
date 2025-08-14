@@ -25,13 +25,14 @@ public class Person {
 
     /*コンソールに表示するためのもの*/
     public void print() {
+    	double bmicc = Math.floor(this.bmi() * 10) / 10.0; /*これはprint()かコンストラクタ内でやることNaNになる*/
         System.out.println(this.name);
         System.out.println(this.age);
-        System.out.println(String.format("%.1f", this.bmi()));
+        System.out.println(bmicc);
         System.out.println();
         System.out.println("名前は" + this.name + "です");
         System.out.println("年は" + this.age + "です");
-        System.out.println("BMIは" + String.format("%.1f", this.bmi()) + "です");
+        System.out.println("BMIは" + bmicc + "です");
         System.out.println();
         }
 
