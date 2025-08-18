@@ -50,7 +50,7 @@ public class Person{
 	  System.out.println("年は" + this.age + "です");
 	  System.out.println("身長は" + this.height + "です");
 	  System.out.println("体重は" + this.weight + "です");
-	  double bmiV = Math.floor(this.bmi() * 10) / 10.0;
+	  double bmiV = Math.floor(this.bmi());
 	  System.out.println("BMIは" + bmiV + "です");
 	  System.out.println();
 	 }

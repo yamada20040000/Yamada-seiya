@@ -25,7 +25,7 @@ public class Person {
 
     /*コンソールに表示するためのもの*/
     public void print() {
-    	double bmicc = Math.floor(this.bmi() * 10) / 10.0; /*これはprint()かコンストラクタ内でやることNaNになる*/
+    	double bmicc = Math.floor(this.bmi());/*これはprint()かコンストラクタ内でやることNaNになる*/
         System.out.println(this.name);
         System.out.println(this.age);
         System.out.println(bmicc);
